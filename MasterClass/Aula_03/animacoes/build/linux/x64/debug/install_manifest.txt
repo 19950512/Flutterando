@@ -1,0 +1,10 @@
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/animacoes
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/Flutterando/MasterClass/Aula_03/animacoes/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
