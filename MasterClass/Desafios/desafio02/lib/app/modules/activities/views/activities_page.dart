@@ -1,3 +1,4 @@
+import 'package:desafio/app/core/components/custom_appbar.dart';
 import 'package:desafio/app/core/components/custom_card.dart';
 import 'package:flutter/material.dart';
 
@@ -13,52 +14,12 @@ class _ActivitiesPageState extends State<ActivitiesPage> {
   Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
-        appBar: AppBar(
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.light_mode),
-            ),
-          ],
-          title: Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: Hero(
-                  tag: 'masterclass',
-                  child: Image.asset(
-                    "lib/assets/logo/logo.png",
-                    width: 40,
-                  ),
-                ),
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  Text(
-                    'Atividades',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Text(
-                    'Flutterando Masterclass',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
+        appBar: CustomAppBar(),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListView.builder(
-              itemCount: 5,
+              itemCount: 15,
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   children: [

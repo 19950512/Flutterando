@@ -23,13 +23,13 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Modular.to.pushNamed('./exercises/?title=$title'),
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
-          color: Colors.grey[800],
+      child: Card(
+        //width: MediaQuery.of(context).size.width,
+        //decoration: BoxDecoration(
+        /* color: Colors.grey[800],
           borderRadius:
               const BorderRadius.all(Radius.circular(Constants.radius)),
-        ),
+        ), */
         child: Column(
           children: [
             // Superior
@@ -47,20 +47,14 @@ class CustomCard extends StatelessWidget {
                           width: 41,
                           height: 41,
                           decoration: BoxDecoration(
-                            color: Colors.blue[800],
+                            color: Constants.colors['primary'],
                             borderRadius:
                                 const BorderRadius.all(Radius.circular(50.0)),
                           ),
                           child: Image.asset(titleAsset),
                         ),
                       ),
-                      Text(
-                        title,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
+                      Text(title, style: Theme.of(context).textTheme.headline3),
                     ],
                   ),
                   Row(
@@ -127,18 +121,8 @@ class CustomCard extends StatelessWidget {
                     onPressed: () {},
                     child: const Text(
                       'Ver mais',
-                      style: TextStyle(
-                        fontSize: 12,
-                      ),
                     ),
-                    style: ButtonStyle(
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(Constants.radius),
-                        ),
-                      ),
-                    ),
-                  )
+                  ),
                 ],
               ),
             ),
