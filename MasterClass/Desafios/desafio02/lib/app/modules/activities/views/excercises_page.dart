@@ -1,3 +1,4 @@
+import 'package:desafio/app/core/components/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
 class ExercisesPage extends StatelessWidget {
@@ -10,10 +11,6 @@ class ExercisesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-    );
+    return Scaffold(appBar: CustomAppBar());
   }
 }

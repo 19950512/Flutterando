@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'modules/activities/activities_module.dart';
-import 'app_splash_page.dart';
-import 'modules/repositories/repositories_module.dart';
+import 'views/repositories_page.dart';
 
-class AppModule extends Module {
+class RepositoriesModule extends Module {
   @override
   List<Bind> get binds => [];
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/', child: (context, args) => const AppSplashPage()),
-        ModuleRoute('/activities', module: ActivitiesModule()),
-        ModuleRoute('/repositories', module: RepositoriesModule()),
+        ChildRoute('/', child: (context, args) => const RepositoriesPage()),
         WildcardRoute(
           child: (_, __) => const Scaffold(
             body: Center(
